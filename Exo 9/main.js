@@ -30,10 +30,17 @@ let tortank = new Pokemon("TorTank", 60 , 45 , 1)
 console.log(tortipousse)
 console.log(tortank) 
 
-Pokemon.attackMonster(Pokemon){
-    Pokemon.hp -=Pokemon.atk
+attackMonster(Pokemon){
+    Pokemon.hp =-this.atk
 }
 
-tortipousse.attackMonster(tortank)   
-console.log(tortank.hp) 
+while(tortipousse.hp>0 || tortank.hp>0){
+    tortipousse.attackMonster(tortank)
+if tortank.hp<0
+console.log ("Tortank a perdu")
 
+
+    tortank.attackMonster(tortipousse)
+if tortipousse.hp<0
+console.log ("Tortipousse a perdu")
+}
