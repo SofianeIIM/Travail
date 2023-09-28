@@ -1,2 +1,3 @@
 alert("ATTENTION !")
-console.log("bienvenue dans la console")
+console.log("Bienvenue dans la console")
+
